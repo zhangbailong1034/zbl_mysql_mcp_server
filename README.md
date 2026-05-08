@@ -10,23 +10,42 @@
 
 
 # 使用指南
+
+## 确认环境
+```
+python -V //python 3.12.4
+uv -V   //uv 0.8.12
+mysql -V //mysql  Ver 8.0.41 for Win64 on x86_64 (MySQL Community Server - GPL)
+```
+
 ## 下载源码
-```vbnet
+```bash
 git clone https://github.com/zhangbailong1034/zbl_mysql_mcp_server.git
 uv sync
 ```
 
-
-
-
-
 ## Qoder使用
-
+mcp.json
+{
+  "mcpServers": {
+      "mysql": {
+      "command": "D:/mcpProjects/zbl_mysql_mcp_server/.venv/Scripts/python.exe",
+      "args": ["D:/mcpProjects/zbl_mysql_mcp_server/main.py"],
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "root",
+        "MYSQL_PASSWORD": "your_password",
+        "MYSQL_DATABASE": "your_db_name"
+      }
+    }
+  }
+}
 
 ## DeepSeek-Tui使用
-cd C:\Users\zbl\.deepseek\mcp.json
+mcp.json
 
-```vbnet
+```json
 
 {
   "timeouts": {
@@ -53,3 +72,22 @@ cd C:\Users\zbl\.deepseek\mcp.json
 
 
 ## Trae使用
+mcp.json
+
+``` json
+{
+  "mcpServers": {
+      "mysql": {
+      "command": "D:/mcpProjects/zbl_mysql_mcp_server/.venv/Scripts/python.exe",
+      "args": ["D:/mcpProjects/zbl_mysql_mcp_server/main.py"],
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "root",
+        "MYSQL_PASSWORD": "your_password",
+        "MYSQL_DATABASE": "your_db_name"
+      }
+    }
+  }
+}
+```

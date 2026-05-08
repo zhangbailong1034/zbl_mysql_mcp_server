@@ -25,6 +25,7 @@ uv sync
 ```
 
 ## Qoder使用
+```
 mcp.json
 {
   "mcpServers": {
@@ -41,6 +42,7 @@ mcp.json
     }
   }
 }
+```
 
 ## DeepSeek-Tui使用
 mcp.json

@@ -1,0 +1,13 @@
+[project]
+name = "zbl-mysql-mcp-server"
+version = "0.1.0"
+description = """本地 MySQL MCP 服务器（基于 stdio）
+提供数据库查询、执行、表结构查看等工具。
+使用环境变量配置数据库连接。"""
+readme = "README.md"
+requires-python = ">=3.12.4"
+dependencies = [
+    "mcp>=1.27.0",
+    "mysql-connector-python>=9.7.0",
+    "python-dotenv>=1.2.2",
+]
